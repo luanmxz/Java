@@ -29,5 +29,22 @@ public class PrimitiveTypes {
         boolean booleanType = true; // true or false
 
         // Obs: Primitive Types CANNOT be null (Different than Wrappers)
+
+        /*
+         * When you do an operation like this: maxIntValue + 1 or minIntValue - 1 on a
+         * int variable for
+         * example, a situation called Overflow/Underflow will occur
+         * Overflow: the value will be transformed into the min value
+         * Underflow: the value will be transformed into the max value
+         */
+
+        int minIntValue = Integer.MIN_VALUE;
+        int maxIntValue = Integer.MAX_VALUE;
+        System.out.println("Overflow example: " + (maxIntValue + 1) + " / Underflow example: " + (minIntValue - 1));
+
+        /*
+         * You can use UNDERSCORE to improve the legibility of a number, for example:
+         * int millionIntValue = 1_000_000
+         */
     }
 }
